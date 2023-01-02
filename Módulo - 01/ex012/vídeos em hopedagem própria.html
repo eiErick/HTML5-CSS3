@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeo hospedados localmente</h1>
+    <p>Este vídeo está hopedado no meu próprio cumputador.</p>
+
+    <video width="400" poster="capa/Érick.png" autoplay loop controls>
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogx" type="video/webm">
+        <source src="midia/meu-video.webm" type="video/ogg">
+    <p>Seu navegador nãp consegue reproduzir esta vídeo,
+    <a target="_blank" type="application/mp4" download="midia/meu-video.mp4" href="midia/meu-video.mp4">clique aqui para baixar!</a></p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="400" height="360" src="https://www.youtube.com/embed/1xVl_qxa5l4"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+</body>
+</html>
