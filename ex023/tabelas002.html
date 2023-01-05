@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        caption{
+            font-size: 1.5em;
+            background-color: rgb(164, 164, 164);
+            border: 1px solid black;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: rgb(164, 164, 164);
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(164, 164, 164);
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(214, 214, 214);
+        }
+        .num{
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <h1>Os 10 maiores países do mundo</h1>
+    <table>
+        <caption>
+            População dos 10 maiores paises do mundo
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">País</th>
+                <th scope="col" style="width: 103px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>China</td>
+                <td class="num">1 411 780 000</td>
+            </tr>
+            <tr>
+                <td>Índia</td>
+                <td class="num">1 326 155 000</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td class="num">331 449 281	</td>
+            </tr>
+            <tr>
+                <td>Indonésia</td>
+                <td class="num">273 523 615	</td>
+            </tr>
+            <tr>
+                <td>Paquistão</td>
+                <td class="num">220 892 340	</td>
+            </tr>
+            <tr>
+                <td>Nígeria</td>
+                <td class="num">217 757 685	</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td class="num">217 757 685	</td>
+            </tr>
+            <tr>
+                <td>Bangladesh</td>
+                <td class="num">164 689 383	</td>
+            </tr>
+            <tr>
+                <td>Rússia</td>
+                <td class="num">145 934 462	</td>
+            </tr>
+            <tr>
+                <td>Mexico</td>
+                <td class="num">128 932 753	</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="num">4 221 114 519</td>
+        </tfoot>
+    </table>
+</body>
+</html>
