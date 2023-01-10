@@ -12,3 +12,6 @@ html{
 menu{
     display: none;
 }
+article::after{
+    content: 'Esse artigo foi escrito no dia 09/01/2023 por Érick da Silva Lima';
+}
