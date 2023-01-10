@@ -1,4 +1,46 @@
 @charset "UTF-8";
-@media print {
-    
+/*Todas as de mais mídias*/
+/*Typical Device Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992
+Desktop: de 992px até 1200px
+Grandes telas: mais de 1200px
+*/
+@media print { /*Impressão*/
+    body, h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 5px solid black;
+    }
+    main::after{
+        content: 'Esta vesão de impressão foi criada por Érick da Silva em 10/01/2023';
+        text-decoration: overline;
+    }
+    img#print{display: block;}
+    img#phone{display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Tablets*/
+   body{
+    background-image: url(../imagens/back-tablet.jpg);
+   } 
+img#tab{display: block;}
+img#phone{display: none;}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*Desktops*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#pc{display: block;}
+    img#phone{display: none;}
+}
+@media screen and (min-width: 1200px) { /*Telas Grandes*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#tv{display: block;}
+    img#phone{display: none;}
 }
